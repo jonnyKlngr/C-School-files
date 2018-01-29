@@ -1,0 +1,18 @@
+string int2bin(int n){
+/*
+Transforms the Interger n to the right binary number and returns it as a String
+*/
+    assert(n >= 0);
+    string ergebnis = "";
+    while (n > 0){
+        if ((n % 2) == 1){
+            ergebnis = "1" + ergebnis;
+            n /= 2;
+        }
+        else if ((n % 2)== 0){
+            ergebnis = "0" + ergebnis;
+            n /= 2;
+        }
+    }
+    return ergebnis;
+}
