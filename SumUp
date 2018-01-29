@@ -1,0 +1,19 @@
+int sumup(int array[], int len, int divisor) {
+/*
+adds every number which can be divides by the divisor and returns the sum.
+*/
+    int ergebnis = 0;
+    int i = 0;
+    while(i < len){
+      if ((array[i] % divisor) != 0){
+        pass;
+      }
+      else{
+        ergebnis = = ergebnis + array[i];
+      }
+      i++;
+    }
+    return ergebnis;
+}
+    
+    
